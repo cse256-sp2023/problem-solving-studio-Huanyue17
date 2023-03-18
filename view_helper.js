@@ -512,6 +512,17 @@ function get_explanation_text(explanation) {
     `
 }
 
+// Define a function to make the explanation text more human-readable
+function getExplanationText(explanation) {
+    let state = explanation.is_allowed == true ? 'allowed' : 'not allowed'
+    return`
+    Action is  ${state}; Because of the user ${ explanation.ace_responsible ? get_user_name(explanation.ace_responsible.who) : 'N/A' }
+    has this permission for file
+    ${explanation.file_responsible?get_full_path(explanation.file_responsible):'N/A'}
+    ${ explanation.text_explanation ? `(${explanation.text_explanation})`  : '' }.
+    `
+}
+
 //---- some universal HTML set-up so you don't have to do it in each wrapper.html ----
 $('#filestructure').css({
     'display':'inline-block',
