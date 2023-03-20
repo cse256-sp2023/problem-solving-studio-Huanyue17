@@ -41,8 +41,8 @@ open on the checkbox. When we selected 'employee 1', all permissions except 'tra
 ### Permissions Explanation
 Step 2: Open the dialog on click
 Question: What does your initial click listener look like?
-Each time I click one of the info icons, the console will prints out "clicked!", and a 
-dialog with the corresponding title and permission explaination content are show up.
+Each time I click one of the info icons, the console will print out "clicked!", and a 
+dialog with the corresponding title and permission explanation content are show up.
 
 Step 3: Log useful information
 Question: What does your full console log method look like (please include its class selector)?

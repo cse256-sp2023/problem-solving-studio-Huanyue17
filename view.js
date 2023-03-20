@@ -32,7 +32,7 @@ let permission_traverse_folder_execute_file = define_new_dialog('generated_permi
         }
     }
 })
-let permission_list_folder_read_contents = define_new_dialog('generated_permission_list_folder_read_contents_dialog', title='List Folder/Read Rontents', {
+let permission_list_folder_read_contents = define_new_dialog('generated_permission_list_folder_read_contents_dialog', title='List Folder/Read Contents', {
     buttons: {
         OK: {
             text: "OK",
